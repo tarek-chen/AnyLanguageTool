@@ -14,6 +14,10 @@
 		40154C27211BEA9400C23798 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40154C26211BEA9400C23798 /* main.m */; };
 		40154C32211BEA9400C23798 /* AnyLanguageToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40154C31211BEA9400C23798 /* AnyLanguageToolTests.m */; };
 		40154C3D211BEA9400C23798 /* AnyLanguageToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40154C3C211BEA9400C23798 /* AnyLanguageToolUITests.m */; };
+		40154C53211C326800C23798 /* StringsFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40154C52211C326800C23798 /* StringsFileManager.m */; };
+		40154C56211C330000C23798 /* StringsFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40154C55211C330000C23798 /* StringsFileModel.m */; };
+		40233272211CA79E004263BB /* NSString+Directory.m in Sources */ = {isa = PBXBuildFile; fileRef = 40233271211CA79E004263BB /* NSString+Directory.m */; };
+		4080DE61211D6C79004B9121 /* LangCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4080DE60211D6C79004B9121 /* LangCellView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,14 @@
 		40154C38211BEA9400C23798 /* AnyLanguageToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnyLanguageToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40154C3C211BEA9400C23798 /* AnyLanguageToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnyLanguageToolUITests.m; sourceTree = "<group>"; };
 		40154C3E211BEA9400C23798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40154C51211C326800C23798 /* StringsFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringsFileManager.h; sourceTree = "<group>"; };
+		40154C52211C326800C23798 /* StringsFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringsFileManager.m; sourceTree = "<group>"; };
+		40154C54211C330000C23798 /* StringsFileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringsFileModel.h; sourceTree = "<group>"; };
+		40154C55211C330000C23798 /* StringsFileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringsFileModel.m; sourceTree = "<group>"; };
+		40233270211CA79E004263BB /* NSString+Directory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Directory.h"; sourceTree = "<group>"; };
+		40233271211CA79E004263BB /* NSString+Directory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Directory.m"; sourceTree = "<group>"; };
+		4080DE5F211D6C79004B9121 /* LangCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangCellView.h; sourceTree = "<group>"; };
+		4080DE60211D6C79004B9121 /* LangCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +112,14 @@
 		40154C19211BEA9300C23798 /* AnyLanguageTool */ = {
 			isa = PBXGroup;
 			children = (
+				4023326F211CA78E004263BB /* NSString+Directory */,
+				40154C50211C325D00C23798 /* StringsFileManager */,
 				40154C1A211BEA9300C23798 /* AppDelegate.h */,
 				40154C1B211BEA9300C23798 /* AppDelegate.m */,
 				40154C1D211BEA9300C23798 /* ViewController.h */,
 				40154C1E211BEA9300C23798 /* ViewController.m */,
+				4080DE5F211D6C79004B9121 /* LangCellView.h */,
+				4080DE60211D6C79004B9121 /* LangCellView.m */,
 				40154C20211BEA9400C23798 /* Assets.xcassets */,
 				40154C22211BEA9400C23798 /* Main.storyboard */,
 				40154C25211BEA9400C23798 /* Info.plist */,
@@ -129,6 +145,26 @@
 				40154C3E211BEA9400C23798 /* Info.plist */,
 			);
 			path = AnyLanguageToolUITests;
+			sourceTree = "<group>";
+		};
+		40154C50211C325D00C23798 /* StringsFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				40154C51211C326800C23798 /* StringsFileManager.h */,
+				40154C52211C326800C23798 /* StringsFileManager.m */,
+				40154C54211C330000C23798 /* StringsFileModel.h */,
+				40154C55211C330000C23798 /* StringsFileModel.m */,
+			);
+			path = StringsFileManager;
+			sourceTree = "<group>";
+		};
+		4023326F211CA78E004263BB /* NSString+Directory */ = {
+			isa = PBXGroup;
+			children = (
+				40233270211CA79E004263BB /* NSString+Directory.h */,
+				40233271211CA79E004263BB /* NSString+Directory.m */,
+			);
+			path = "NSString+Directory";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4080DE61211D6C79004B9121 /* LangCellView.m in Sources */,
+				40154C56211C330000C23798 /* StringsFileModel.m in Sources */,
 				40154C1F211BEA9300C23798 /* ViewController.m in Sources */,
 				40154C27211BEA9400C23798 /* main.m in Sources */,
 				40154C1C211BEA9300C23798 /* AppDelegate.m in Sources */,
+				40154C53211C326800C23798 /* StringsFileManager.m in Sources */,
+				40233272211CA79E004263BB /* NSString+Directory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,15 +462,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AnyLanguageTool/AnyLanguageTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3MS7H7P2F9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AnyLanguageTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = dcoin.AnyLanguageTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -440,15 +480,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AnyLanguageTool/AnyLanguageTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3MS7H7P2F9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AnyLanguageTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = dcoin.AnyLanguageTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
